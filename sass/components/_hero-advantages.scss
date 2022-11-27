@@ -1,0 +1,57 @@
+.hero-advantages {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.hero-advantages__title--hidden,
+.portfolio__title--hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.hero-advantages__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-advantages__item+.hero-advantages__item {
+    margin-left: 30px;
+}
+
+.hero-advantages__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+
+    background-color: $secondary-bcg-color;
+}
+
+.hero-advantages__title {
+    margin-bottom: 10px;
+
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.hero-advantages__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $pcolor;
+}

@@ -1,0 +1,72 @@
+/* Checkbox */
+
+.check {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 424px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.check__text,
+.check__link {
+    margin-left: 7px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.check__link {
+    margin-left: 0;
+}
+
+.check__input {
+    position: absolute;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.check__box {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.check__input:checked + .check__box {
+    background-color: $brandcolor;
+    border-color: $brandcolor;
+    background-image: url(../images/icon\ check.svg);
+    background-size: contain;
+    background-origin: border-box;
+}
+
+.check__link {
+    color: $brandcolor;
+}
+
+.modal-form__textarea::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+/* Button Form */
+
+.modal-form__button {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}

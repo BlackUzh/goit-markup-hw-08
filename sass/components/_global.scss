@@ -1,0 +1,36 @@
+img {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+    margin: 0px 0px;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    background-color: $backgroundcolor;
+    color: $hcolor;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.link {
+    text-decoration: none;
+
+    &:hover, &:focus {
+        color: $brandcolor;
+    }
+}

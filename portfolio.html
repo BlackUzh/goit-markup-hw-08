@@ -15,48 +15,56 @@
 <body>
 <header class="header">
     <!-- Header Nav -->
-    <div class="container header__container">
-        <nav class="header-nav">
-            <a class="logo link" href="./index.html">
-                Web<span class="header-nav__logo--black">Studio</span>
-            </a>
-            <ul class="list header-nav__list">
-                <li class="item header-nav__item">
-                    <a class="link header-nav__link" href="./index.html">
-                        Студія
+    <header class="header">
+        <!-- Header Nav -->
+        <div class="container header__container">
+            <nav class="header-nav">
+                <a class="logo link" href="./index.html">
+                    Web<span class="header-nav__logo--black">Studio</span>
+                </a>
+                <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg width="40" height="40" aria-label="Переключатель мобільного меню">
+                        <use class="mobile-toggle__menu" href="./images/icons.svg#icon-menu"></use>
+                    </svg>
+                </button>
+    
+                <ul class="list header-nav__list">
+                    <li class="item header-nav__item">
+                        <a class="link header-nav__link header-nav__link--current" href="./index.html">
+                            Студія
+                        </a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="link header-nav__link" href="./portfolio.html">
+                            Портфоліо
+                        </a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="link header-nav__link" href="/">
+                            Контакти
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="list header-contacts__list">
+                <li class="header-contacts__item">
+                    <a class="link header-contacts__link" href="maito:info@devstudio.com">
+                        <svg class="header-contacts__icon" width="16" height="12">
+                            <use href="./images/icons.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com
                     </a>
                 </li>
-                <li class="header-nav__item">
-                    <a class="link header-nav__link header-nav__link--current" href="./portfolio.html">
-                        Портфоліо
-                    </a>
-                </li>
-                <li class="header-nav__item">
-                    <a class="link header-nav__link" href="/">
-                        Контакти
+                <li class="header-contacts__item">
+                    <a class="link header-contacts__link" href="tel:+380961111111">
+                        <svg class="header-contacts__icon" width="10" height="16">
+                            <use href="./images/icons.svg#icon-smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11
                     </a>
                 </li>
             </ul>
-        </nav>
-        <ul class="list header-contacts__list">
-            <li class="header-contacts__item">
-                <a class="link header-contacts__link" href="maito:info@devstudio.com">
-                    <svg class="header-contacts__icon" width="16" height="12">
-                        <use href="./images/icons.svg#icon-envelope"></use>
-                    </svg>
-                    info@devstudio.com
-                </a>
-            </li>
-            <li class="header-contacts__item">
-                <a class="link header-contacts__link" href="tel:+380961111111">
-                    <svg class="header-contacts__icon" width="10" height="16">
-                        <use href="./images/icons.svg#icon-smartphone"></use>
-                    </svg>
-                    +38 096 111 11 11
-                </a>
-            </li>
-        </ul>
-    </div>
+        </div>
     </header>
     <main>
         <section class="portfolio">
@@ -81,12 +89,12 @@
                         Додатки
                     </button>
                 </li>
-                <li class="filter__item">
+                <li class="filter__item filter__item--margin">
                     <button class="filter__button" type="button">
                         Дизайн
                     </button>
                 </li>
-                <li class="filter__item">
+                <li class="filter__item filter__item--margin">
                     <button class="filter__button" type="button">
                         Маркетинг
                     </button>
@@ -97,7 +105,11 @@
                 <li class="cards__item">
                     <a>
                        <div class="overlay">
-                        <img src="./images/techno1.jpg" alt="Веб-сайт на ноутбуці" width="370" height="294">
+                        <picture>
+                            <source media="(max-width: 767px)" 
+                            srcset="./images/portfolio/techno1-mobile.jpg 1x, ./images/portfolio/techno1-mobile@2x.jpg 2x">
+                            <img src="./images/portfolio/techno1-mobile.jpg" alt="Веб-сайт на ноутбуці">
+                        </picture>
                         <p class="overlay__text">
                             Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                             вичерпні відомості про компанію чи приватну особу.
@@ -116,7 +128,11 @@
                 <li class="cards__item">
                     <a>
                         <div class="overlay">
-                            <img src="./images/poster2.jpg" alt="Постер з баскетболістами" width="370" height="294">
+                           <picture>
+                            <source media="(max-width: 767px)"
+                                srcset="./images/portfolio/poster2-mobile.jpg 1x, ./images/portfolio/poster2-mobile@2x.jpg 2x">
+                            <img src="./images/portfolio/poster2-mobile.jpg" alt="Постер з баскетболістами">
+                           </picture>
                         <p class="overlay__text">
                             Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                             вичерпні відомості про компанію чи приватну особу.
@@ -135,7 +151,11 @@
                 <li class="cards__item">
                     <a>
                         <div class="overlay">
-                            <img src="./images/seafood3.jpg" alt="Лого ресторану" width="370" height="294">
+                            <picture>
+                                <source media="(max-width: 767px)"
+                                    srcset="./images/portfolio/seafood3-mobile.jpg 1x, ./images/portfolio/seafood3-mobile@2x.jpg 2x">
+                                <img src="./images/portfolio/seafood3-mobile.jpg" alt="Лого ресторану">
+                            </picture>
                         <p class="overlay__text">
                             Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                             вичерпні відомості про компанію чи приватну особу.
@@ -154,7 +174,11 @@
                 <li class="cards__item">
                     <a>
                         <div class="overlay">
-                            <img src="./images/prime4.jpg" alt="Навушники" width="370" height="294">
+                            <picture>
+                                <source media="(max-width: 767px)"
+                                    srcset="./images/portfolio/prime4-mobile.jpg 1x, ./images/portfolio/prime4-mobile@2x.jpg 2x">
+                                <img src="./images/portfolio/prime4-mobile.jpg" alt="Навушники">
+                            </picture>
                         <p class="overlay__text">
                             Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                             вичерпні відомості про компанію чи приватну особу.
@@ -173,7 +197,11 @@
                 <li class="cards__item">
                     <a>
                         <div class="overlay">
-                            <img src="./images/boxes5.jpg" alt="Дві коробки" width="370" height="294">
+                            <picture>
+                                <source media="(max-width: 767px)"
+                                    srcset="./images/portfolio/boxes5-mobile.jpg 1x, ./images/portfolio/boxes5-mobile@2x.jpg 2x">
+                                <img src="./images/portfolio/boxes5-mobile.jpg" alt="Дві коробки">
+                            </picture>
                         <p class="overlay__text">
                             Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                             вичерпні відомості про компанію чи приватну особу.
@@ -192,7 +220,11 @@
                 <li class="cards__item">
                     <a>
                        <div class="overlay">
-                         <img src="./images/inspiration6.jpg" alt="Монітор з веб-сайтом" width="370" height="294">
+                        <picture>
+                            <source media="(max-width: 767px)"
+                                srcset="./images/portfolio/inspiration6-mobile.jpg 1x, ./images/portfolio/inspiration6-mobile@2x.jpg 2x">
+                            <img src="./images/portfolio/inspiration6-mobile.jpg" alt="Монітор з веб-сайтом">
+                        </picture>
                         <p class="overlay__text">
                             Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                             вичерпні відомості про компанію чи приватну особу.
@@ -211,7 +243,11 @@
                 <li class="cards__item">
                     <a>
                         <div class="overlay">
-                            <img src="./images/limitededition7.jpg" alt="Розгорнута книга" width="370" height="294">
+                            <picture>
+                                <source media="(max-width: 767px)"
+                                    srcset="./images/portfolio/limitededition7-mobile.jpg 1x, ./images/portfolio/limitededition7-mobile@2x.jpg 2x">
+                                <img src="./images/portfolio/limitededition7-mobile.jpg" alt="Розгорнута книга">
+                            </picture>
                         <p class="overlay__text">
                             Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                             вичерпні відомості про компанію чи приватну особу.
@@ -230,7 +266,11 @@
                 <li class="cards__item">
                     <a>
                         <div class="overlay">
-                            <img src="./images/lab8.jpg" alt="Бірка з брендом" width="370" height="294">
+                            <picture>
+                                <source media="(max-width: 767px)"
+                                    srcset="./images/portfolio/lab8-mobile.jpg 1x, ./images/portfolio/lab8-mobile@2x.jpg 2x">
+                                <img src="./images/lab8.jpg" alt="Бірка з брендом">
+                            </picture>
                         <p class="overlay__text">
                             Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                             вичерпні відомості про компанію чи приватну особу.
@@ -249,7 +289,11 @@
                 <li class="cards__item">
                     <a>
                         <div class="overlay">
-                            <img src="./images/business9.jpg" alt="Руки друкують на ноутбуці" width="370" height="294">
+                            <picture>
+                                <source media="(max-width: 767px)"
+                                    srcset="./images/portfolio/business9-mobile.jpg 1x, ./images/portfolio/business9-mobile@2x.jpg 2x">
+                                <img src="./images/business9.jpg" alt="Руки друкують на ноутбуці">
+                            </picture>
                         <p class="overlay__text">
                             Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                             вичерпні відомості про компанію чи приватну особу.
@@ -347,5 +391,63 @@
             </form>
         </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg width="40" height="40">
+                <use class="mobile-toggle__close" href="./images/icons.svg#icon-close_40px"></use>
+            </svg>
+        </button>
+    
+        <ul class="mobile-menu">
+            <li class="mobile-menu__item">
+                <a href="./index.html"class="link mobile-menu__link">
+                    Студія
+                </a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="./portfolio.html" class="link mobile-menu__link mobile-menu__link--current">
+                    Портфоліо
+                </a>
+            </li>
+            <li class="mobile-menu__item"><a href="#" class="link mobile-menu__link">
+                Контакти
+            </a>
+        </li>
+        </ul>
+        <ul class="list mobile-contacts">
+            <li class="mobile-contacts__item">
+                <a class="link mobile-contacts__tel" href="tel:+380961111111">
+                    +38 096 111 11 11
+                </a>
+            </li>
+            <li class="mobile-contacts__item">
+                <a class="link mobile-contacts__email" href="maito:info@devstudio.com">
+                    info@devstudio.com
+                </a>
+            </li>
+        </ul>
+        <ul class="list mobile-social">
+            <li class="mobile-social__item">
+                <a class="link mobile-social__link" href="https://www.instagram.com/" target="_blank"
+                    rel="noreferrer noopener nofollow">Instagram</a>
+            </li>
+            <li class="mobile-social__item">
+                <a class="link mobile-social__link" href="https://twitter.com/" target="_blank"
+                    rel="noreferrer noopener nofollow">Twitter</a>
+            </li>
+            <li class="mobile-social__item">
+                <a class="link mobile-social__link" href="https://www.facebook.com/" target="_blank"
+                    rel="noreferrer noopener nofollow">Facebook</a>
+            </li>
+            <li class="mobile-social__item">
+                <a class="link mobile-social__link" href="https://www.linkedin.com/" target="_blank"
+                    rel="noreferrer noopener nofollow">LinkedIn</a>
+            </li>
+        </ul>
+    </div>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

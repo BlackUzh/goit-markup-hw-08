@@ -3,8 +3,17 @@
 }
 
 .header__container {
+    position: relative;
     display: flex;
+    align-items: center;
+}
 
+.header-nav {
+    @media screen  and (max-width: 767px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
 }
 
 .logo {
@@ -15,22 +24,27 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: $brandcolor;
+    
+    @media screen and (max-width: 1199px) {
+        font-size: 24px;
+        line-height: 1.16;
+        padding: 16px 0;
+        }
+        
 }
+
 
 .header-nav__logo--black {
     color: $logocolor;
 }
 
-
-
-.header-nav {
-    display: flex;
-    align-items: center;
-}
-
 .header-nav__list {
     display: flex;
     margin-left: 93px;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
 }
 
 .header-nav__item+.header-nav__item {
@@ -79,6 +93,9 @@
 .header-contacts__list {
     display: flex;
     margin-left: auto;
+    @media screen and (max-width: 767px) {
+            display: none;
+        }
 }
 
 .header-contacts__item+.header-contacts__item {

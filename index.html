@@ -20,6 +20,12 @@
                 <a class="logo link" href="./index.html">
                     Web<span class="header-nav__logo--black">Studio</span>
                 </a>
+                <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg width="40" height="40" aria-label="Переключатель мобільного меню">
+                        <use class="mobile-toggle__menu" href="./images/icons.svg#icon-menu"></use>
+                    </svg>
+                </button>
+                
                 <ul class="list header-nav__list">
                     <li class="item header-nav__item">
                         <a class="link header-nav__link header-nav__link--current" href="./index.html">
@@ -175,7 +181,11 @@
             </h2>
             <ul class="list our-team__list">
                 <li class="our-team__item">
-                    <img class="our-team__img" src="./images/img.jpg" alt="Фото Ігора Дем'яненко" width="270" height="260">
+                    <picture>
+                        <source media="(max-width: 767px)" 
+                        srcset="./images/demyanenko-mobile.jpg 1x, ./images/demyanenko-mobile@2x.jpg 2x">
+                        <img class="our-team__img" src="./images/demyanenko-mobile.jpg" alt="Фото Ігора Дем'яненко">
+                    </picture>
                     <h3 class="our-team__names">
                         Ігор Дем'яненко
                     </h3>
@@ -183,30 +193,33 @@
                         Product Designer
                     </p>
                     <div class="icon-wrapper">
-                        <a class="icon-wrapper__link" href="">
-                            <svg class="icon-wrapper__svg" width="20" height="20px">
+                        <a class="icon-wrapper__link" href="https://www.instagram.com/">
+                            <svg class="icon-wrapper__svg" width="20" height="20">
                                 <use href="./images/icons.svg#icon-instagram-2"></use>
                             </svg>
                         </a>
-                        <a class="icon-wrapper__link" href="">
-                            <svg class="icon-wrapper__svg" width="20" height="20px">
+                        <a class="icon-wrapper__link" href="https://twitter.com/">
+                            <svg class="icon-wrapper__svg" width="20" height="20">
                                 <use href="./images/icons.svg#icon-twitter"></use>
                             </svg>
                         </a>
-                        <a class="icon-wrapper__link" href="">
-                            <svg class="icon-wrapper__svg" width="20" height="20px">
+                        <a class="icon-wrapper__link" href="https://www.facebook.com/">
+                            <svg class="icon-wrapper__svg" width="20" height="20">
                                 <use href="./images/icons.svg#icon-facebook"></use>
                             </svg>
                         </a>
-                        <a class="icon-wrapper__link" href="">
-                            <svg class="icon-wrapper__svg" width="20" height="20px">
+                        <a class="icon-wrapper__link" href="https://www.linkedin.com/">
+                            <svg class="icon-wrapper__svg" width="20" height="20">
                                 <use href="./images/icons.svg#icon-linkedin"></use>
                             </svg>
                         </a>
                     </div>
                 </li>
                 <li class="our-team__item">
-                    <img class="our-team__img" src="./images/img(1).jpg" alt="Фото Ольги Рєпіна" width="270" height="260">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="./images/repina-mobile.jpg 1x, ./images/repina-mobile@2x.jpg 2x">
+                        <img class="our-team__img" src="./images/repina-mobile.jpg" alt="Фото Ольга Репіна">
+                    </picture>
                     <h3 class="our-team__names">
                         Ольга Рєпіна
                     </h3>
@@ -214,30 +227,33 @@
                         Frontend Developer
                     </p>
                     <div class="icon-wrapper">
-                        <a class="icon-wrapper__link" href="">
-                            <svg class="icon-wrapper__svg" width="20" height="20px">
+                        <a class="icon-wrapper__link" href="https://www.instagram.com/">
+                            <svg class="icon-wrapper__svg" width="20" height="20">
                                 <use href="./images/icons.svg#icon-instagram-2"></use>
                             </svg>
                         </a>
-                        <a class="icon-wrapper__link" href="">
-                            <svg class="icon-wrapper__svg" width="20" height="20px">
+                        <a class="icon-wrapper__link" href="https://twitter.com/">
+                            <svg class="icon-wrapper__svg" width="20" height="20">
                                 <use href="./images/icons.svg#icon-twitter"></use>
                             </svg>
                         </a>
-                        <a class="icon-wrapper__link" href="">
-                            <svg class="icon-wrapper__svg" width="20" height="20px">
+                        <a class="icon-wrapper__link" href="https://www.facebook.com/">
+                            <svg class="icon-wrapper__svg" width="20" height="20">
                                 <use href="./images/icons.svg#icon-facebook"></use>
                             </svg>
                         </a>
-                        <a class="icon-wrapper__link" href="">
-                            <svg class="icon-wrapper__svg" width="20" height="20px">
+                        <a class="icon-wrapper__link" href="https://www.linkedin.com/">
+                            <svg class="icon-wrapper__svg" width="20" height="20">
                                 <use href="./images/icons.svg#icon-linkedin"></use>
                             </svg>
                         </a>
                     </div>
                 </li>
                 <li class="our-team__item">
-                    <img class="our-team__img" src="./images/img(2).jpg" alt="Фото Микола Тарасов" width="270" height="260">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="./images/tarasov-mobile.jpg 1x, ./images/tarasov-mobile@2x.jpg 2x">
+                        <img class="our-team__img" src="./images/tarasov-mobile.jpg" alt="Фото Ігора Микола Тарасов">
+                    </picture>
                     <h3 class="our-team__names">
                         Микола Тарасов
                     </h3>
@@ -245,30 +261,33 @@
                         Marketing
                     </p>
                     <div class="icon-wrapper">
-                        <a class="icon-wrapper__link" href="">
-                            <svg class="icon-wrapper__svg" width="20" height="20px">
+                        <a class="icon-wrapper__link" href="https://www.instagram.com/">
+                            <svg class="icon-wrapper__svg" width="20" height="20">
                                 <use href="./images/icons.svg#icon-instagram-2"></use>
                             </svg>
                         </a>
-                        <a class="icon-wrapper__link" href="">
-                            <svg class="icon-wrapper__svg" width="20" height="20px">
+                        <a class="icon-wrapper__link" href="https://twitter.com/">
+                            <svg class="icon-wrapper__svg" width="20" height="20">
                                 <use href="./images/icons.svg#icon-twitter"></use>
                             </svg>
                         </a>
-                        <a class="icon-wrapper__link" href="">
-                            <svg class="icon-wrapper__svg" width="20" height="20px">
+                        <a class="icon-wrapper__link" href="https://www.facebook.com/">
+                            <svg class="icon-wrapper__svg" width="20" height="20">
                                 <use href="./images/icons.svg#icon-facebook"></use>
                             </svg>
                         </a>
-                        <a class="icon-wrapper__link" href="">
-                            <svg class="icon-wrapper__svg" width="20" height="20px">
+                        <a class="icon-wrapper__link" href="https://www.linkedin.com/">
+                            <svg class="icon-wrapper__svg" width="20" height="20">
                                 <use href="./images/icons.svg#icon-linkedin"></use>
                             </svg>
                         </a>
                     </div>
                 </li>
                 <li class="our-team__item">
-                    <img class="our-team__img" src="./images/img(3).jpg" alt="Фото Михайло Єрмаков" width="270" height="260">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="./images/ermakov-mobile.jpg 1x, ./images/ermakov-mobile@2x.jpg 2x">
+                        <img class="our-team__img" src="./images/ermakov-mobile.jpg" alt="Фото Михайло Єрмаков">
+                    </picture>
                     <h3 class="our-team__names">
                         Михайло Єрмаков
                     </h3>
@@ -276,23 +295,23 @@
                         UI Designer
                     </p>
                     <div class="icon-wrapper">
-                       <a class="icon-wrapper__link" href="">
-                            <svg class="icon-wrapper__svg" width="20" height="20px">
+                        <a class="icon-wrapper__link" href="https://www.instagram.com/">
+                            <svg class="icon-wrapper__svg" width="20" height="20">
                                 <use href="./images/icons.svg#icon-instagram-2"></use>
                             </svg>
                         </a>
-                        <a class="icon-wrapper__link" href="">
-                            <svg class="icon-wrapper__svg" width="20" height="20px">
+                        <a class="icon-wrapper__link" href="https://twitter.com/">
+                            <svg class="icon-wrapper__svg" width="20" height="20">
                                 <use href="./images/icons.svg#icon-twitter"></use>
                             </svg>
                         </a>
-                        <a class="icon-wrapper__link" href="">
-                            <svg class="icon-wrapper__svg" width="20" height="20px">
+                        <a class="icon-wrapper__link" href="https://www.facebook.com/">
+                            <svg class="icon-wrapper__svg" width="20" height="20">
                                 <use href="./images/icons.svg#icon-facebook"></use>
                             </svg>
                         </a>
-                        <a class="icon-wrapper__link" href="">
-                            <svg class="icon-wrapper__svg" width="20" height="20px">
+                        <a class="icon-wrapper__link" href="https://www.linkedin.com/">
+                            <svg class="icon-wrapper__svg" width="20" height="20">
                                 <use href="./images/icons.svg#icon-linkedin"></use>
                             </svg>
                         </a>
@@ -360,7 +379,7 @@
                 <a class="logo link footer__logo--margin" href="./index.html">
                     Web<span class="footer__logo--white">Studio</span>
                 </a>
-                <address class="address">
+                <address class="address" id="contacts">
                     <a class="link address__link" href="https://goo.gl/maps/yDgXRb8fHyVBhMKj9" target="_blank"
                         rel="noopener noreferrer nofollow">
                         м. Київ, пр-т Лесі Українки, 26
@@ -447,7 +466,7 @@
                 </h3>
                 <label class="modal-form__field">
                     <span class="modal-form__text">Ім'я</span>
-                    <input class="modal-form__input" type="text" name="name" autofocus>
+                    <input class="modal-form__input" type="text" name="name" >
                     <svg class="modal-form__icon" width="18px" height="18px">
                         <use class="icon-input" href="./images/icons.svg#icon-person"></use>
                     </svg>
@@ -483,6 +502,57 @@
             </form>
         </div>
     </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg width="40" height="40">
+                <use class="mobile-toggle__close" href="./images/icons.svg#icon-close_40px"></use>
+            </svg>
+        </button>
+    
+        <ul class="mobile-menu">
+            <li class="mobile-menu__item"><a href="./index.html" class="link mobile-menu__link mobile-menu__link--current">Студія</a></li>
+            <li class="mobile-menu__item"><a href="./portfolio.html" class="link mobile-menu__link">Портфоліо</a></li>
+            <li class="mobile-menu__item"><a href="#" class="link mobile-menu__link">Контакти</a></li>
+        </ul>
+        <ul class="list mobile-contacts">
+            <li class="mobile-contacts__item">
+                <a class="link mobile-contacts__tel" href="tel:+380961111111">
+                    +38 096 111 11 11
+                </a>
+            </li>
+            <li class="mobile-contacts__item">
+                <a class="link mobile-contacts__email" href="maito:info@devstudio.com">
+                    info@devstudio.com
+                </a>
+            </li>
+        </ul>
+        <ul class="list mobile-social">
+            <li class="mobile-social__item">
+                <a class="link mobile-social__link" 
+                href="https://www.instagram.com/" 
+                target="_blank" rel="noreferrer noopener nofollow">Instagram</a>
+            </li>
+            <li class="mobile-social__item">
+                <a class="link mobile-social__link" 
+                href="https://twitter.com/" 
+                target="_blank" rel="noreferrer noopener nofollow">Twitter</a>
+            </li>
+            <li class="mobile-social__item">
+                <a class="link mobile-social__link" 
+                href="https://www.facebook.com/" 
+                target="_blank" rel="noreferrer noopener nofollow">Facebook</a>
+            </li>
+            <li class="mobile-social__item">
+                <a class="link mobile-social__link" 
+                href="https://www.linkedin.com/" 
+                target="_blank" rel="noreferrer noopener nofollow">LinkedIn</a>
+            </li>
+        </ul>
+    </div>
     <script src="./js/modal.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+        <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

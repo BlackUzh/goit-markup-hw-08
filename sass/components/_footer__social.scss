@@ -1,7 +1,8 @@
 /* Footer social link */
 
 .social-footer {
-    margin-left: 70px;
+    margin-top: 60px;
+    text-align: center;
 }
 
 .social-footer__text {
@@ -16,6 +17,8 @@
 
 .social-footer__list {
     display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 20px;
 }
 

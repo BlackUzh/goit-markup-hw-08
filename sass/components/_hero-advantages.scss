@@ -1,8 +1,3 @@
-.hero-advantages {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 .hero-advantages__title--hidden,
 .portfolio__title--hidden {
     position: absolute;
@@ -17,25 +12,23 @@
     margin: -1px;
 }
 
-.hero-advantages__list {
-    display: flex;
-    justify-content: space-between;
-}
-
-.hero-advantages__item+.hero-advantages__item {
-    margin-left: 30px;
+.hero-advantages {
+    @media screen and (max-width: 767px) {
+        padding-top: 60px;
+        padding-bottom: 60px;;
+    }
 }
 
 .hero-advantages__box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    margin-bottom: 30px;
-    width: 270px;
-    height: 120px;
-
-    background-color: $secondary-bcg-color;
+    @media screen and (max-width: 767px) {
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 450px;
+            background-color: $secondary-bcg-color;
+            margin-bottom: 30px;
+    }
+   
 }
 
 .hero-advantages__title {
@@ -46,6 +39,9 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
 }
 
 .hero-advantages__text {
@@ -54,4 +50,10 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: $pcolor;
+}
+
+@media screen and (max-width: 767px) {
+    .hero-advantages__item:not(:last-child) {
+        margin-bottom: 30px;
+    }
 }

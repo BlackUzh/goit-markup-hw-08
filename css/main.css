@@ -329,14 +329,35 @@ body {
   margin: -1px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .hero-advantages {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
 
-@media screen and (max-width: 767px) {
+.hero-advantages__item {
+  width: calc(100% - 30px);
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-advantages__item {
+    width: calc(50% - 30px);
+    margin: 15px;
+  }
+}
+
+.hero-advantages__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -15px;
+}
+
+@media screen and (max-width: 1199px) {
   .hero-advantages__box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -347,7 +368,6 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    max-width: 450px;
     background-color: #F5F4FA;
     margin-bottom: 30px;
   }
@@ -385,7 +405,7 @@ body {
     display: none;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .our-team {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -393,7 +413,7 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
   .our-team__title, .clients__title {
     margin-bottom: 30px;
     font-size: 28px;
@@ -411,6 +431,23 @@ body {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .our-team__item {
+    width: calc(50% - 30px);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .our-team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -491,16 +528,42 @@ body {
   fill: currentColor;
 }
 
-@media screen and (max-width: 767px) {
+.clients {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 1199px) {
   .clients {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .clients {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    width: 1200px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .clients__item {
     width: calc(50% - 30px);
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients__item {
+    width: calc(33.3333333333% - 30px);
+    margin: 15px;
   }
 }
 
@@ -508,14 +571,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 30px;
+  margin: -15px;
 }
-
 .clients__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -549,18 +608,39 @@ body {
   background-color: #2F303A;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-contacts__box {
+    display: inline-block;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 60px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
 .footer__logo--white {
   text-align: center;
   color: #fff;
 }
 
-@media screen and (max-width: 767px) {
-  .footer__logo--margin {
-    display: block;
-    text-align: center;
-  }
+.footer__logo--margin {
+  margin-bottom: 4px;
+  display: block;
+  text-align: center;
 }
-
 @media screen and (max-width: 767px) {
   .address {
     display: block;
@@ -589,8 +669,12 @@ body {
 
 /* Footer social link */
 .social-footer {
-  margin-top: 60px;
   text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .social-footer {
+    margin-top: 60px;
+  }
 }
 
 .social-footer__text {

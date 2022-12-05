@@ -1,22 +1,46 @@
 .clients {
-    @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (max-width: 1199px) {
         padding-top: 60px;
         padding-bottom: 60px;
     }
+        @media screen and (min-width: 480px) {
+            width: 480px;
+        }
+    
+        @media screen and (min-width: 768px) {
+            width: 768px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: 1200px;
+        }
     
 }
 
 .clients__item {
     @media screen and (max-width: 767px) {
             width: calc(100% /2 - 30px);
+            margin: 15px;
         }
+
+                @media screen and (min-width: 768px) and (max-width: 1199px) {
+                    width: calc(100% / 3 - 30px);
+                    margin: 15px;
+                }
 }
 
 .clients__list {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    gap: 30px;
+    margin: -15px;
+    @media screen and (max-width: 767px) {
+    }
+    
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        
+    }
 }
 
 .clients__link {

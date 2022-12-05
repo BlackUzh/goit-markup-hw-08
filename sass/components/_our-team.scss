@@ -1,13 +1,14 @@
 .our-team {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
         padding-top: 60px;
         padding-bottom: 60px;
         background-color: $secondary-bcg-color;
         }
+        
     }
     
     .our-team__title, .clients__title {
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1199px) {
             margin-bottom: 30px;
             font-size: 28px;
             line-height: 1.18;
@@ -25,6 +26,19 @@
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+            width: calc(100% / 2 - 30px);
+            margin: 15px;
+        }
+}
+
+.our-team__list {
+    @media screen and (min-width: 768px) {
+        display: flex;
+            flex-wrap: wrap;
+            margin: -15px;
+    }
 }
 
 @media screen and (max-width: 767px) {

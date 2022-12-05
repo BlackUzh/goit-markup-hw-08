@@ -6,15 +6,36 @@
     background-color: $accent-bcg-color;
 }
 
+.footer-contacts__box {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: inline-block;
+            text-align: center;
+    }
+}
+
+.footer__container {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 60px;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+}
+
 .footer__logo--white {
     text-align: center;
     color: $text-color;
+    
 }
 
 .footer__logo--margin {
+    margin-bottom: 4px;
+    display: block;
+    text-align: center;
     @media screen and (max-width: 767px) {
-        display: block;
-            text-align: center;
+        
+       
     }
     
 }
@@ -24,7 +45,6 @@
         display: block;
         text-align: center;
     }
-
 }
 
 .address__link {

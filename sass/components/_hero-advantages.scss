@@ -13,18 +13,36 @@
 }
 
 .hero-advantages {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
         padding-top: 60px;
         padding-bottom: 60px;;
     }
 }
 
+.hero-advantages__item {
+    width: calc(100% - 30px);
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: calc(100% / 2 - 30px);
+        margin: 15px;
+
+    }
+    
+}
+
+.hero-advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin: -15px;
+}
+
 .hero-advantages__box {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
         display: flex;
             justify-content: center;
             align-items: center;
-            max-width: 450px;
             background-color: $secondary-bcg-color;
             margin-bottom: 30px;
     }

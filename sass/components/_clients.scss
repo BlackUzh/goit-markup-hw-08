@@ -15,8 +15,19 @@
     
         @media screen and (min-width: 1200px) {
             width: 1200px;
+            padding-top: 94px;
+            padding-bottom: 94px;
         }
     
+}
+
+.clients__list {
+    display: flex;
+
+    @media screen and (max-width: 1999px) {
+        flex-wrap: wrap;
+        margin: -15px;
+    }
 }
 
 .clients__item {
@@ -29,19 +40,13 @@
                     width: calc(100% / 3 - 30px);
                     margin: 15px;
                 }
+
+                                @media screen and (min-width: 1200px) {
+                                    width: calc(100% / 6 - 30px);
+                                    margin: 15px;
+                                }
 }
 
-.clients__list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
-    @media screen and (max-width: 767px) {
-    }
-    
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        
-    }
-}
 
 .clients__link {
     display: flex;

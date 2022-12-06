@@ -7,17 +7,34 @@
         padding-bottom: 60px;
     }
 }
-
+ 
 .filter {
     margin-bottom: 50px;
     display: flex;
+    
+    @media screen and (max-width: 1199px) {
+        gap: 8px;
+    }
+    
+
+    @media screen and (max-width: 767px) {
     flex-wrap: wrap;
     align-content: flex-start;
-    gap: 8px;
-    width: 90%;
+    width: 80%;
+        
+    }
+
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+    }
 }
 
+.filter__item+.filter__item {
+    @media screen and (min-width: 1200px) {
+                margin-left: 8px;
+            }
 
+}
 
 
 .filter__button {
@@ -49,7 +66,7 @@
 }
 
 .filter__item--margin {
-    @media screen and (min-width: 432px) and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
         margin-top: 7px;
     }
 }
